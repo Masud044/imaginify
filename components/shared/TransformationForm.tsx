@@ -222,7 +222,7 @@ const TransformationForm = ({ action, data = null, userId, type, creditBalance, 
         )}
 
         {(type === 'remove' || type === 'recolor') && (
-          <div className="prompt-field">
+           <div className="prompt-field">
             <CustomField 
               control={form.control}
               name="prompt"
@@ -241,7 +241,7 @@ const TransformationForm = ({ action, data = null, userId, type, creditBalance, 
                     field.onChange
                   )}
                 />
-              )}
+               )}
             />
 
             {type === 'recolor' && (

@@ -22,7 +22,7 @@ type CustomFieldProps = {
 
 export const CustomField = ({
   control,
-  render,
+   render,
   name,
   formLabel,
   className,

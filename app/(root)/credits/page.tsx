@@ -35,13 +35,13 @@ const Credits = async () => {
                 <p className="p-16-regular">{plan.credits} Credits</p>
               </div>
 
-              {/* Inclusions */}
+              Inclusions
               <ul className="flex flex-col gap-5 py-9">
                 {plan.inclusions.map((inclusion) => (
                   <li
                     key={plan.name + inclusion.label}
                     className="flex items-center gap-4"
-                  >
+                  > 
                     <Image
                       src={`/assets/icons/${
                         inclusion.isIncluded ? "check.svg" : "cross.svg"
@@ -50,7 +50,7 @@ const Credits = async () => {
                       width={24}
                       height={24}
                     />
-                    <p className="p-16-regular">{inclusion.label}</p>
+                     <p className="p-16-regular">{inclusion.label}</p>
                   </li>
                 ))}
               </ul>
